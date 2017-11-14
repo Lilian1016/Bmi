@@ -53,6 +53,11 @@ public class MainActivity extends AppCompatActivity {
                     .setTitle("結果")
                     .setPositiveButton("ok",null)
                     .show();
+        }if(height>=3){
+            new AlertDialog.Builder(this)
+                    .setMessage("身高單位應為公尺")
+                    .setPositiveButton("OK",null)
+                    .show();
         }
     }
 }
